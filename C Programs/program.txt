@@ -11,10 +11,10 @@ P10 - Write a program to to find greater between two numbers
 P11 - Write a program to to find greater among three numbers
 P12 - Write a program to find roots of a quadratic equation
 P13 - C Program to check leap year 
-P14 - 
-P15 - 
-P16 - 
-P17 - 
+P14 - Write a program to print first 10 natural numbers And It's reverse.
+P15 - Write a program to print first 10 even and odd natural numbers And It's reverse.
+P16 - Write a program to print table of user’s choice
+P17 - Write a program to calculate sum of first N natural numbers
 P18 - 
 P19 - 
 P20 - 
