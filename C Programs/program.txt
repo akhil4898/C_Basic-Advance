@@ -6,10 +6,10 @@ P5 - What is use of %n in printf() ?
 P6 - Write a program to swap two numbers without using third variable   
 P7 - Write a program to swap two numbers
 P8 - Write a program to check whether a number is even or odd.
-P9 - 
-P10 - 
-P11 - 
-P12 - 
+P9 - Write a program to check whether a given number is divisible by 5 or not.
+P10 - Write a program to to find greater between two numbers
+P11 - Write a program to to find greater among three numbers
+P12 - Write a program to find roots of a quadratic equation
 P13 - 
 P14 - 
 P15 - 
