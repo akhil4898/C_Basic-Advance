@@ -15,11 +15,11 @@ P14 - Write a program to print first 10 natural numbers And It's reverse.
 P15 - Write a program to print first 10 even and odd natural numbers And It's reverse.
 P16 - Write a program to print table of user’s choice
 P17 - Write a program to calculate sum of first N natural numbers
-P18 - 
-P19 - 
-P20 - 
-P21 - 
-P22 - 
+P18 - Write a program to calculate product of first N natural numbers
+P19 - Write a program to calculate factorial of a number
+P20 - Write a program to calculate sum of first N even and odd natural numbers.
+P21 - Write a program to calculate x power y.(when user input x is 2 and y is 3 then the result will be 8.
+P22 - We can write c code in c++ file...Beacuse C is a subset of c++...  
 P23 - 
 P24 - 
 P25 - 

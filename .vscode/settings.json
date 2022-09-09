@@ -29,6 +29,7 @@
   ],
   "files.associations": {
     "string.h": "c",
-    "random": "c"
+    "random": "c",
+    "functional": "c"
   }
 }
