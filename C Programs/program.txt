@@ -20,7 +20,7 @@ P19 - Write a program to calculate factorial of a number
 P20 - Write a program to calculate sum of first N even and odd natural numbers.
 P21 - Write a program to calculate x power y.(when user input x is 2 and y is 3 then the result will be 8.
 P22 - We can write c code in c++ file...Beacuse C is a subset of c++...  
-P23 - 
+P23 - Write a program to count digits in a given number.
 P24 - 
 P25 - 
 P26 - 
