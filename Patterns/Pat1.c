@@ -320,6 +320,15 @@ void pat12(int n)
     
 }
 
+/*
+
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        * 
+
+*/
 
 void pat14(int n)
 {
@@ -360,6 +369,18 @@ void pat13(int n)
 }
 
 
+/*
+
+       * 
+      * * * 
+    * * * * * 
+  * * * * * * * 
+* * * * * * * * * 
+
+*/
+
+
+
 void pat15(int n)
 {
     for (int i = 1; i <= n; i++)
@@ -380,6 +401,17 @@ void pat15(int n)
     }
     
 }
+
+
+/*
+
+*********
+ *******
+  *****
+   ***
+    *
+
+*/
 
 
 void pat16(int n)
@@ -405,12 +437,15 @@ void pat16(int n)
 }
 
 
+/*
 
+*********
+ *******
+  *****
+   ***
+    *
 
-
-
-
-
+*/
 
 void pat18(int n)
 {
@@ -432,12 +467,14 @@ void pat18(int n)
 
 }
 
+/*
 
-// * * * * * 
-//   * * * * * 
-    // * * * * * 
-    //   * * * * * 
-        // * * * * * 
+* * * * * 
+  * * * * * 
+    * * * * * 
+      * * * * * 
+        * * * * * 
+*/
 
 void pat19(int n)
 {
@@ -462,6 +499,6 @@ int main()
     printf("Enter Rows and Cols: ");
     scanf("%d", &rows);
     printf("\n");
-    pat19(rows);
+    pat13(rows);
     return 0;
 }
