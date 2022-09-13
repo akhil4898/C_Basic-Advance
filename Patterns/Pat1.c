@@ -407,18 +407,9 @@ void pat16(int n)
 
 
 
-void pat17(int n)
-{
-    for (int i = 1; i <= n; i++)
-    {
-        for (int j = 1; j <= n - i; j++)
-        {
-            printf("* ");
-        }
-        printf("\n");
-    }
-    
-}
+
+
+
 
 
 void pat18(int n)
@@ -438,8 +429,32 @@ void pat18(int n)
      
       printf("\n");  
     }  
+
 }
 
+
+// * * * * * 
+//   * * * * * 
+    // * * * * * 
+    //   * * * * * 
+        // * * * * * 
+
+void pat19(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j < i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= n; k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    
+    }   
+}
 
 int main()
 {
@@ -447,6 +462,6 @@ int main()
     printf("Enter Rows and Cols: ");
     scanf("%d", &rows);
     printf("\n");
-    pat18(rows);
+    pat19(rows);
     return 0;
 }
