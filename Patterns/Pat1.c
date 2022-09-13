@@ -256,12 +256,197 @@ void pat9(int n)
   }
 }
 
+
+// 1
+// 23
+// 345
+// 4567
+// 
+
+void pat10(int n)
+{
+    
+    for (int i = 1; i <= n; i++)
+    {
+        // int count = i;
+        for (int j = 1; j <= i ; j++)
+        {
+            printf("%d ", i+j-1);
+            // count = count - 1;
+        }
+        printf("\n");
+    }
+    
+}
+
+
+// AAA
+// BBB
+// CCC
+// 
+
+void pat11(int n)
+{
+    char ch = 65;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            printf("%c ", 'A' + i - 1);
+        }
+        printf("\n");
+        ch = ch + 1;    
+    }
+    
+}
+// 
+// ABC
+// ABC
+// ABC
+// 
+
+void pat12(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        char ch = 65;
+        for (int j = 1; j <= n; j++)
+        {
+            printf("%c ", 'A' + j - 1);
+            ch = ch + 1;
+        }
+        printf("\n");
+    }
+    
+}
+
+
+void pat14(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j < i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= n - i + 1; k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    
+}
+
+
+// ABC
+// DEF
+// GHI
+
+
+void pat13(int n)
+{
+    char ch = 65;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            printf("%c ", ch);
+            ch = ch + 1;
+        }
+        printf("\n");
+    }
+    
+}
+
+
+void pat15(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n - i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= i; k++)
+        {
+            printf("* ");
+        }
+        for (int l = 1; l < i; l++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    
+}
+
+
+void pat16(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j < i; j++)
+        {
+            printf("  ");
+        }
+
+        for (int j = i; j <= n; j++)
+        {
+            printf("* ");
+        }
+        for (int m = 1; m <= n - i; m++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
+}
+
+
+
+
+void pat17(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n - i; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    
+}
+
+
+void pat18(int n)
+{
+    int m = 1;
+    for(int i=n;i>=1;i--)  
+    {  
+       for(int j=1;j<m;j++)  
+       {  
+           printf(" ");  
+       }  
+       for(int k=1;k<=2*i-1;k++)  
+       {  
+           printf("*");  
+       }  
+       m++;  
+     
+      printf("\n");  
+    }  
+}
+
+
 int main()
 {
     int rows, cols;
     printf("Enter Rows and Cols: ");
     scanf("%d", &rows);
     printf("\n");
-    pat9(rows);
+    pat18(rows);
     return 0;
 }
