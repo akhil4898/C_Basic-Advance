@@ -666,6 +666,33 @@ void pat25(int n)
                 printf("  ");
         }
         printf("\n");
+    }   
+}
+
+/*
+
+* * * * *
+*     *
+*   *
+* *
+*
+
+*/
+
+void pat26(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = i; j <= n; j++)
+        {
+            if (i == 1 || j == i || j == n)
+            {
+                printf("* ");
+            }
+            else
+                printf("  ");
+        }
+        printf("\n");
     }
     
 }
@@ -677,6 +704,6 @@ int main()
     printf("Enter Rows and Cols: ");
     scanf("%d", &rows);
     printf("\n");
-    pat25(rows);
+    pat26(rows);
     return 0;
 }
