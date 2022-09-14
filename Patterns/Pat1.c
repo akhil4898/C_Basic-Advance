@@ -1,7 +1,4 @@
-
-
 #include <stdio.h>
-
 
 /*
 
@@ -141,17 +138,11 @@ void pat5(int r)
         for (int j = 1; j <= i; j++)
         {
             if (j == 1 || i == j || i ==r)
-            {
                 printf("%d", i);
-            }
             else
-            {
                 printf(" ");
-            }
-
         }
-        printf("\n");
-        
+        printf("\n"); 
     }
     printf("\n");
 }
@@ -330,7 +321,7 @@ void pat12(int n)
 
 */
 
-void pat14(int n)
+void pat13(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -353,7 +344,7 @@ void pat14(int n)
 // GHI
 
 
-void pat13(int n)
+void pat14(int n)
 {
     char ch = 65;
     for (int i = 1; i <= n; i++)
@@ -447,7 +438,7 @@ void pat16(int n)
 
 */
 
-void pat18(int n)
+void pat17(int n)
 {
     int m = 1;
     for(int i=n;i>=1;i--)  
@@ -476,7 +467,7 @@ void pat18(int n)
         * * * * * 
 */
 
-void pat19(int n)
+void pat18(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -504,7 +495,7 @@ void pat19(int n)
 */
 
 
-void pat20(int n)
+void pat19(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -531,7 +522,7 @@ void pat20(int n)
 
 */
 
-void pat21(int n)
+void pat20(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -562,7 +553,7 @@ void pat21(int n)
 
 */
 
-void pat22(int n)
+void pat21(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -594,7 +585,7 @@ void pat22(int n)
 
 */
 
-void pat23(int n)
+void pat22(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -620,7 +611,7 @@ void pat23(int n)
 
 */
 
-void pat24(int n)
+void pat23(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -650,7 +641,7 @@ void pat24(int n)
         * 
 */
 
-void pat25(int n)
+void pat24 (int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -679,7 +670,7 @@ void pat25(int n)
 
 */
 
-void pat26(int n)
+void pat25(int n)
 {
     for (int i = 1; i <= n; i++)
     {
@@ -704,6 +695,6 @@ int main()
     printf("Enter Rows and Cols: ");
     scanf("%d", &rows);
     printf("\n");
-    pat26(rows);
+    pat25(rows);
     return 0;
 }
