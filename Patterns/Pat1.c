@@ -521,6 +521,15 @@ void pat20(int n)
     
 }
 
+/*
+
+        * * * * * 
+      *       * 
+    *       * 
+  *       * 
+* * * * * 
+
+*/
 
 void pat21(int n)
 {
@@ -542,6 +551,16 @@ void pat21(int n)
     
 }
 
+
+/*
+
+* * * * * 
+  *       * 
+    *       * 
+      *       * 
+        * * * * * 
+
+*/
 
 void pat22(int n)
 {
@@ -565,12 +584,72 @@ void pat22(int n)
 }
 
 
+/*
+
+* 
+* * 
+*   * 
+*     * 
+* * * * * 
+
+*/
+
+void pat23(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j < i + 1; j++)
+        {
+            if (j == 1 || i == j || i == n)
+                printf("* ");
+            else
+                printf("  ");
+        }
+        printf("\n");
+        
+    }
+}
+
+
+/*
+
+      * 
+    * * 
+  *   * 
+* * * * 
+
+*/
+
+void pat24(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n - i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= i; k++)
+        {
+            if (k == 1 || i == k || i == n)
+                printf("* ");
+            else
+                printf("  ");
+        }
+        printf("\n");
+        
+    }
+    
+}
+
+
+
+
 int main()
 {
     int rows, cols;
     printf("Enter Rows and Cols: ");
     scanf("%d", &rows);
     printf("\n");
-    pat22(rows);
+    pat23(rows);
     return 0;
 }
