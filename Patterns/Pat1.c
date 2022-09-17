@@ -1056,7 +1056,19 @@ void pat36(int n)
     
 }
 
+/*
 
+        *         
+        *         
+        *         
+        *         
+* * * * * * * * * 
+        *         
+        *         
+        *         
+        *       
+
+*/
 void pat37(int n)
 {
     for (int i = 1; i <= n; i++)
