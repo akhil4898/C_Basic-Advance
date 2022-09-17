@@ -1075,7 +1075,7 @@ void pat37(int n)
     {
         for (int j = 1; j <= n; j++)
         {
-            if (i == n / 2 + 1|| j == n / 2 + 1)
+            if (i == n / 2 + 1 || j == n / 2 + 1)
                 printf("* ");
             else
                 printf("  ");            
