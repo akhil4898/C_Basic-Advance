@@ -968,7 +968,24 @@ void pat33(int n)
 
 void pat34(int n)
 {
-    
+    int l = n;
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+        for (int k = 1; k <= 2 * l - 2; k++)
+        {
+            printf("  ");
+        }
+        for (int m = 1; m <= i; m++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+        l--;
+    }
 }
 
 
@@ -978,6 +995,6 @@ int main()
     printf("Enter Rows and Cols: ");
     scanf("%d", &rows);
     printf("\n");
-    pat33(rows);
+    pat34(rows);
     return 0;
 }
