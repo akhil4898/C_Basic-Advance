@@ -997,12 +997,29 @@ void pat34(int n)
 }
 
 
+
+void pat35(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            if (i == 1 || i ==n || j == 1 || j == n || i == j || j == n - i + 1)
+                printf("* ");
+            else
+                printf("  ");            
+        }
+        printf("\n");
+    }
+    
+}
+
 int main()
 {
     int rows, cols;
     printf("Enter Rows and Cols: ");
     scanf("%d", &rows);
     printf("\n");
-    pat34(rows);
+    pat35(rows);
     return 0;
 }
