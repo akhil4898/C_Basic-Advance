@@ -934,7 +934,15 @@ void pat32(int n)
     }   
 }
 
+/*
 
+* * * * * * * * * * 
+* * * *     * * * * 
+* * *         * * * 
+* *             * * 
+*                 * 
+
+*/
 
 void pat33(int n)
 {
@@ -955,6 +963,12 @@ void pat33(int n)
         printf("\n");
    }
    
+}
+
+
+void pat34(int n)
+{
+    
 }
 
 
