@@ -1085,12 +1085,44 @@ void pat37(int n)
     
 }
 
+void pat38(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n - i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= 2 * i - 1; k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    int l = n - 1;
+    for (int i = 1; i < n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= 2 * l - 1; k++)
+        {
+            printf("* ");
+        }
+        l--;
+        printf("\n");
+    }
+    
+    
+}
+
 int main()
 {
     int rows, cols;
     printf("Enter Rows and Cols: ");
     scanf("%d", &rows);
     printf("\n");
-    pat37(rows);
+    pat38(rows);
     return 0;
 }
