@@ -362,7 +362,7 @@ void pat14(int n)
 
 /*
 
-       * 
+        * 
       * * * 
     * * * * * 
   * * * * * * * 
@@ -375,7 +375,8 @@ void pat14(int n)
 void pat15(int n)
 {
     for (int i = 1; i <= n; i++)
-    {
+    {   
+//               j = i; j < n; j++        This condition is also working for this loop..
         for (int j = 1; j <= n - i; j++)
         {
             printf("  ");
@@ -713,6 +714,249 @@ void pat26(int n)
     }
 }
 
+/*
+
+        * 
+      *   * 
+    *       * 
+  *           * 
+* * * * * * * * * 
+
+*/
+
+
+void pat27(int n)
+{
+   for (int i = 1; i <= n; i++)
+   {
+        for (int j = i; j < n; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= 2 * i - 1; k++)
+        {
+
+            if (k == 1 || i == n || k == 2 * i - 1)
+                printf("* ");
+            else
+                printf("  ");
+            
+        }
+        printf("\n");  
+   }
+}
+
+/*
+
+* * * * * * * * * 
+  *           * 
+    *       * 
+      *   * 
+        * 
+
+*/
+
+
+void pat28(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j < i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = i; k <= 2 * n - i; k++)
+        {
+            if (i == 1 || k == i || k == 2 * n - i) 
+                printf("* ");
+            else
+                printf("  ");
+        }
+        printf("\n");
+    }
+}
+
+
+/*
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+
+*/
+
+void pat29(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for (int i = 1; i < n; i++)
+    {
+        for (int k = i; k < n; k++)
+        {
+            printf("* ");
+        }
+       printf("\n");
+    }   
+}
+
+
+/*
+
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        * 
+
+*/
+
+void pat30(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n - i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= i; k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for (int i = 1; i < n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= n - i; k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
+/*
+
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+
+*/
+
+void pat31(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n - i + 1; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    
+    
+}
+
+/*
+
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        * 
+        * 
+      * * 
+    * * * 
+  * * * * 
+* * * * * 
+
+*/
+
+void pat32(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j < i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= n - i + 1; k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n - i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= i ; k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+    }   
+}
+
+
+
+void pat33(int n)
+{
+   for (int i = 1; i <= n; i++)
+   {
+        for (int j = 1; j <= n - i + 1; j++)
+        {
+            printf("* ");
+        }
+        for (int k = 1; k <= 2 * i - 2; k++)
+        {
+            printf("  ");
+        }
+        for (int m = i; m <= n; m++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+   }
+   
+}
+
 
 int main()
 {
@@ -720,6 +964,6 @@ int main()
     printf("Enter Rows and Cols: ");
     scanf("%d", &rows);
     printf("\n");
-    pat26(rows);
+    pat33(rows);
     return 0;
 }
