@@ -1132,10 +1132,10 @@ void pat38(int n)
 
 int main()
 {
-    int rows, cols;
-    printf("Enter Rows and Cols: ");
-    scanf("%d", &rows);
+    int num;
+    printf("Enter Rows: ");
+    scanf("%d", &num);
     printf("\n");
-    pat38(rows);
+    pat38(num);
     return 0;
 }
