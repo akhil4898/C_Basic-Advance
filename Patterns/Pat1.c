@@ -7,13 +7,13 @@
 ***
 
 */
-void pat1(int r, int c)
+void pat1(int r)
 {
     int i = 1;
     while (i <= r)
     {
         int j = 1;
-        while (j <= c)
+        while (j <= r)
         {
             printf("* ");
             j = j + 1;
@@ -33,14 +33,14 @@ void pat1(int r, int c)
 
 */
 
-void pat2(int r, int c)
+void pat2(int r)
 {
 
     int i = 1;
     while (i <= r)
     {
         int j = 1;
-        while(j <= c)
+        while(j <= r)
         {
             printf("%d ", i);
             j = j + 1;
