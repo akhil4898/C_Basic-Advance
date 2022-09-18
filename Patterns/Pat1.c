@@ -1125,8 +1125,20 @@ void pat38(int n)
         }
         l--;
         printf("\n");
+    }    
+}
+
+
+void pat39(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%d ", i);
+        }
+        printf("\n");
     }
-    
     
 }
 
@@ -1136,6 +1148,6 @@ int main()
     printf("Enter Rows: ");
     scanf("%d", &num);
     printf("\n");
-    pat38(num);
+    pat39(num);
     return 0;
 }
