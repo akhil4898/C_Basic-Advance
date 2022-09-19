@@ -262,8 +262,8 @@ void pat10(int n)
         // int count = i;
         for (int j = 1; j <= i ; j++)
         {
-            printf("%d ", i+j-1);
-            // count = count - 1;
+            printf("%d ", i + j -1);
+            // count = count + 1;
         }
         printf("\n");
     }
@@ -1128,19 +1128,79 @@ void pat38(int n)
     }    
 }
 
+/*
+
+A 
+B B 
+C C C 
+D D D D 
+E E E E E 
+
+*/
 
 void pat39(int n)
 {
+    // char ch = 'A';
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= i; j++)
         {
-            printf("%d ", i);
+            // printf("%c ", ch);
+            printf("%c ", 'A' + i - 1);
+        }
+        printf("\n");
+        // ch = ch + 1;
+    }
+    
+}
+
+/*
+
+A
+B C
+D E F
+
+*/
+void pat40(int n)
+{
+    char ch = 'A';
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%c ", ch);
+            ch = ch + 1;
+        }
+        printf("\n");
+    }   
+}
+
+/*
+
+A 
+B A 
+C B A 
+D C B A 
+E D C B A 
+
+*/
+
+void pat41(int n)
+{
+    // char ch = 'A';
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%c ", 'A' + i - j);
+            // ch = ch + 1;
         }
         printf("\n");
     }
     
 }
+
+
 
 int main()
 {
@@ -1148,6 +1208,7 @@ int main()
     printf("Enter Rows: ");
     scanf("%d", &num);
     printf("\n");
-    pat39(num);
+    pat41(num);
+
     return 0;
 }
