@@ -1201,6 +1201,24 @@ void pat41(int n)
 }
 
 
+void pat42(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("  ");
+        }
+        for (int k = 1; k <= n - i + 1; k++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+        
+    }
+    
+}
+
 
 int main()
 {
@@ -1208,7 +1226,6 @@ int main()
     printf("Enter Rows: ");
     scanf("%d", &num);
     printf("\n");
-    pat41(num);
-
+    pat42(num);
     return 0;
 }
