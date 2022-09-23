@@ -1209,7 +1209,7 @@ void pat42(int n)
         {
             printf("  ");
         }
-        for (int k = 1; k <= n - i + 1; k++)
+        for (int k = 1; k <= n; k++)
         {
             printf("* ");
         }
