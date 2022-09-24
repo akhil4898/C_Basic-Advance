@@ -1196,8 +1196,7 @@ void pat41(int n)
             // ch = ch + 1;
         }
         printf("\n");
-    }
-    
+    } 
 }
 
 
