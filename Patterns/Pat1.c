@@ -1220,6 +1220,7 @@ void pat42(int n)
 }
 
 
+
 int main()
 {
     int num;
