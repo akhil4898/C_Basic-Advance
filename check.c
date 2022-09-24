@@ -16,5 +16,6 @@ int main()
 void f1()
 {
     x++;
+    
     printf("%d\n", x);
 }
