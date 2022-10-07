@@ -39,7 +39,7 @@ int threeSum(int a, int b, int c)
 }
 
 void greetHelloAndExecute(int (*fptr)(int, int)){
-    printf("Hello user\n");
+    printf("Hello user...How are you??\n");
     printf("The sum of 5 and 7 is %d\n", fptr(5, 7));
     
 }
