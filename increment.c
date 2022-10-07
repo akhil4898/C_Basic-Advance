@@ -20,7 +20,7 @@ int main()
     // //                   101  102 102  
    
     int a = 5, b = 10, c;        
-    c = (a+++ ++b);                       // lexical Analyser(Tokens)  |a| |++| |+| |++| |b|   = 16;
+    c = (a+++ ++b);                             // lexical Analyser(Tokens)  |a| |++| |+| |++| |b|   = 16;
     printf("%d\n", c);
     printf("%d\n", (a+++b));
     printf("%d\n", (++a+b++));
