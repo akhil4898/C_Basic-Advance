@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 void f1();
-int x;
+int num;
 
 int main()
 {   
-    extern int x;
-    printf("%d\n", x);
+    extern int num;
+    printf("%d\n", num);
     f1();
-    printf("%d\n", x);
+    printf("%d\n", num);
 }
 
-// int x;
+// int num;
 
 void f1()
 {
-    x++;
-    printf("%d\n", x);
+    num++;
+    printf("%d\n", num);
 }
 
 
