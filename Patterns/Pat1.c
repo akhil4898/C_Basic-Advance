@@ -137,7 +137,7 @@ void pat5(int r)
     {
         for (int j = 1; j <= i; j++)
         {
-            if (j == 1 || i == j || i ==r)
+            if (j == 1 || i == j || i == r)
                 printf("%d", i);
             else
                 printf(" ");

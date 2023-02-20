@@ -99,10 +99,35 @@ void pattern4(int n)
         }
         printf("\n");
     }
-    
+}
 
 
 
+/*
+
+1
+22
+3 3
+4  4
+55555
+
+*/
+
+
+void pattern5(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+           if (j == 1 || i == j || i == n)
+                printf("%d", i);
+           else 
+                printf(" ");
+        }
+        printf("\n");
+        
+    }
 }
 
 
@@ -114,6 +139,6 @@ int main()
     printf("Enter rows: ");
     scanf("%d", &num);
     printf("\n");
-    pattern4(num);
+    pattern5(num);
     return 0;
 }
