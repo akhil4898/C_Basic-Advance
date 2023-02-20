@@ -150,7 +150,15 @@ void pattern6(int n)
     {
         for (int j = 1; j <= n; j++)
         {
-            printf(" ");
+            if (i % 2 == 0)
+            {
+                printf("0");
+            }
+            else
+            {
+                printf("1");
+            }
+            
         }
         printf("\n");
     }
