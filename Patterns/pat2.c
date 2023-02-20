@@ -23,6 +23,28 @@ void pattern(int n)
 
 
 
+/*
+
+111
+222
+333
+
+*/
+
+void pattern2(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= n; j++)
+        {
+            printf("%d", i);
+        }
+        printf("\n");   
+    }
+}
+
+
+
 
 
 
@@ -33,6 +55,6 @@ int main()
     printf("Enter rows: ");
     scanf("%d", &num);
     printf("\n");
-    pattern(num);
+    pattern2(num);
     return 0;
 }
