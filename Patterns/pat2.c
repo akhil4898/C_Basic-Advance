@@ -148,15 +148,15 @@ void pattern6(int n)
 {
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= n; j++)
+        for (int j = 1; j <= i; j++)
         {
-            if (i % 2 == 0)
+            if ((i + j) % 2 == 0)
             {
-                printf("0");
+                printf("1");
             }
             else
             {
-                printf("1");
+                printf("0");
             }
             
         }
@@ -194,6 +194,6 @@ int main()
     printf("Enter rows: ");
     scanf("%d", &num);
     printf("\n");
-    pattern7(num);
+    pattern6(num);
     return 0;
 }
