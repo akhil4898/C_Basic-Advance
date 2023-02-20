@@ -132,19 +132,53 @@ void pattern5(int n)
 
 
 
+/*
+
+1
+0 1
+1 0 1
+0 1 0 1
+
+*/
+
+
+
+
 void pattern6(int n)
 {
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= n; j++)
         {
-            printf();
+            printf(" ");
         }
         printf("\n");
     }
     
 }
 
+/*
+
+1
+12
+123
+1234
+12345
+
+*/
+
+void pattern7(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+    
+}
 
 int main()
 {
@@ -152,6 +186,6 @@ int main()
     printf("Enter rows: ");
     scanf("%d", &num);
     printf("\n");
-    pattern5(num);
+    pattern7(num);
     return 0;
 }
